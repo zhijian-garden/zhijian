@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>芷間 · Between Thoughts</title>
+<style>
+:root{--ink:#3f4d42;--cream:#f8f5ed;--sage:#a0ad96;--gold:#b49a72}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:Georgia,'Noto Serif TC',serif;line-height:1.9}a{color:inherit}.hero{min-height:90vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:60px 22px}.eyebrow{font:12px Arial,sans-serif;letter-spacing:3px;color:#a28a62}.hero h1{font-size:clamp(52px,13vw,84px);font-weight:normal;margin:12px 0}.intro{max-width:340px;font-size:18px}.button{display:inline-block;margin-top:25px;padding:12px 30px;background:var(--sage);color:white;border-radius:30px;text-decoration:none}.section{padding:75px 22px;text-align:center}.section h2{font-size:36px;font-weight:normal;margin:8px 0 12px}.journal{background:#eef0e8}.topic-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;max-width:760px;margin:35px auto}.topic-card{display:block;text-decoration:none;padding:24px 14px;border-radius:15px;min-height:190px}.topic-card small{font:10px Arial,sans-serif;letter-spacing:1px}.topic-card h3{font-size:27px;font-weight:normal;margin:10px 0}.topic-card p{font-size:14px;line-height:1.7}.literature{background:#f0e7dc}.philosophy{background:#e6ebdd}.research{background:#e2e9e8}.art{background:#f0e3e5}.garden{background:#eef0e8}.garden:nth-of-type(even){background:var(--cream)}article{background:white;text-align:left;max-width:590px;margin:28px auto;padding:28px;border-radius:16px;box-shadow:0 3px 18px #3f4d420a}article h3{font-size:23px;font-weight:normal;margin:4px 0 12px}.category{font:12px Arial,sans-serif;color:#a28a62}.back{display:inline-block;margin-top:12px;text-decoration:none;border-bottom:1px solid var(--sage)}footer{text-align:center;padding:45px 20px;font-size:13px;color:#69756c}@media(max-width:360px){.topic-grid{grid-template-columns:1fr}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+/* 第五堂：文章列表與完整閱讀 */
+.reading-card{display:block;text-decoration:none;color:inherit;max-width:590px;margin:24px auto;background:#fff;padding:28px;border-radius:16px;text-align:left;box-shadow:0 3px 18px #3f4d420a}
+.reading-card h3{font-size:24px;font-weight:normal;margin:7px 0}.reading-card p{line-height:1.9}.read-more{color:#607b66;font-size:14px}.story-section{padding:75px 22px;background:#e9eee7}.story-paper{max-width:690px;margin:25px auto;padding:clamp(24px,6vw,55px);background:white;border-radius:18px;text-align:left}.story-paper h2{text-align:center;font-size:clamp(27px,6vw,36px);font-weight:normal;line-height:1.5}.story-paper .category{text-align:center}.story-paper p{line-height:2.3;margin:22px 0}.story-paper hr{border:0;border-top:1px solid #ded7c9;margin:32px 0}.signature{text-align:right;color:#7c8c7a}.story-return{display:inline-block;text-decoration:none;border-bottom:1px solid #a0ad96}.privacy-note{max-width:650px;margin:20px auto;font-size:13px;color:#657568}
+</style>
+</head>
+<body>
+<header class="hero" id="home">
+  <p class="eyebrow">BETWEEN THOUGHTS</p>
+  <h1>芷間</h1>
+  <p class="intro">在生活的縫隙裡，<br>收藏思想與微光。</p>
+  <a class="button" href="#topics">探索四座花園 ↓</a>
+</header>
+<section class="section journal" id="journal">
+  <p class="eyebrow">THE JOURNAL</p>
+  <h2>文字花園</h2>
+  <a class="reading-card" href="#story-1">
+    <span class="category">文學 · 示範文章</span>
+    <h3>在安靜裡，遇見自己</h3>
+    <p>有些日子，不需要急著前進。停下腳步，聽見內心的聲音，也是一種溫柔的成長。</p>
+    <span class="read-more">閱讀全文 →</span>
+  </a>
+</section>
+<section class="section" id="topics">
+  <p class="eyebrow">FOUR GARDENS</p>
+  <h2>四座花園</h2>
+  <p>在不同的文字之間，遇見不同的風景。</p>
+  <div class="topic-grid">
+    <a class="topic-card literature" href="#literature"><small>01 · LITERATURE</small><h3>文學</h3><p>以文字收藏生活，讓日常成為故事。</p><small>探索花園 →</small></a>
+    <a class="topic-card philosophy" href="#philosophy"><small>02 · REFLECTIONS</small><h3>哲思</h3><p>在問題與答案之間，練習理解自己。</p><small>探索花園 →</small></a>
+    <a class="topic-card research" href="#research"><small>03 · RESEARCH</small><h3>研究</h3><p>從人的故事出發，探索社會與專業。</p><small>探索花園 →</small></a>
+    <a class="topic-card art" href="#art"><small>04 · ART</small><h3>藝術</h3><p>讓想像有形，讓感受成為創作。</p><small>探索花園 →</small></a>
+  </div>
+</section>
+<section class="section garden" id="literature"><p class="eyebrow">LITERATURE</p><h2>文學花園</h2><article><h3>把日子寫成詩</h3><p>有些故事不必驚天動地，只要真實地被記下，就有了存在的重量。</p></article><a class="back" href="#topics">↑ 返回四座花園</a></section>
+<section class="section garden" id="philosophy"><p class="eyebrow">REFLECTIONS</p><h2>哲思花園</h2><article><h3>關於慢下來這件事</h3><p>不是所有的前進，都需要速度。有時候停下來，也是認識自己的開始。</p></article><a class="back" href="#topics">↑ 返回四座花園</a></section>
+<section class="section garden" id="research"><p class="eyebrow">RESEARCH</p><h2>研究花園</h2><article><h3>從傾聽開始的理解</h3><p>每個人的經驗，都有值得理解的脈絡。研究讓我們練習提問，而不急著判斷。</p></article><a class="back" href="#topics">↑ 返回四座花園</a></section>
+<section class="section garden" id="art"><p class="eyebrow">ART & CREATION</p><h2>藝術花園</h2><article><h3>把想像畫成風景</h3><p>有些感受難以用語言說明，於是讓顏色、線條與圖像替我們說話。</p></article><a class="back" href="#topics">↑ 返回四座花園</a></section>
+
+<!-- 第五堂：完整文章閱讀區（示範內容，可自行改寫） -->
+<section class="story-section" id="story-1">
+  <div class="story-paper">
+    <a class="story-return" href="#journal">← 返回文字花園</a>
+    <p class="category">文學 · 示範文章</p>
+    <h2>在安靜裡，遇見自己</h2>
+    <hr>
+    <p>有些日子，不需要急著前進。</p>
+    <p>我們總以為，生活應該不斷向前，應該完成更多事情，應該成為更好的人。</p>
+    <p>但也許，真正的成長並不總是向外奔跑，而是在某個安靜的時刻，願意停下來，聽見自己的聲音。</p>
+    <p>願我們都能在忙碌與寧靜之間，找到屬於自己的節奏。</p>
+    <p class="signature">— 芷間</p>
+  </div>
+</section>
+<footer><p class="privacy-note">本網站以筆名創作。研究與專業反思內容不揭露可辨識的個人或服務資訊。</p><p>芷間 · Between Thoughts</p><p>以筆名書寫，收藏思考與創作。</p><a href="#home">回到首頁 ↑</a></footer>
+</body>
+</html>
